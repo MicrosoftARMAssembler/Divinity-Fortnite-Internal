@@ -7,21 +7,5 @@ struct thread_context_t {
 };
 
 __declspec( dllexport ) bool __stdcall DllMain( HMODULE module, std::uint32_t reason, void* context ) {  
-    dll::initialize( );
-    
-    auto thread_context = reinterpret_cast< thread_context_t* >( context );
-    if ( thread_context ) {
-        thread_context->m_executed = true;
-        thread_context->m_result = result;
-
-        auto* ntdll = GetModuleHandleA( oxorany( "ntdll.dll" ) );
-        if ( !ntdll )
-            return false;
-
-        const auto nt_continue = reinterpret_cast< nt_continue_t >( GetProcAddress( ntdll, oxorany( "NtContinue" ) ) );
-        nt_continue( &thread_context->m_context, true );
-    }
-
-    // should never reach here
-    return 1;
+    return dll::initialize( );
 }
