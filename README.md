@@ -1,7 +1,7 @@
 # Divinity-Fortnite-Internal
 Fortnite Internal that featured Instant Kill and Bullet TP. <br /> 
-Features a custom **Rendering Framework** I made for specifically interals called **Peach**. <br /> 
-The Custom Framework used **Fortnite Tracker** as a overlay and was Tournament Ready. <br /> 
+Features a custom **Rendering Framework** specifically for interals called **Peach**. <br /> 
+The Custom Framework used **Fortnite Tracker** as a overlay, if you want to see the full breakdown click <a href="https://github.com/MicrosoftARMAssembler/Peach-Framework/tree/main">Here </a> <br /> 
 
 https://github.com/user-attachments/assets/a3c182cc-9096-44ed-9c03-c1ac6b886f69
 
